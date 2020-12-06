@@ -998,14 +998,24 @@ h1 {
 .page {
 	margin-bottom:0;
 }
-.btn {
+a {
+	color:#019fd5;
+}
+a:visited{
+	color:#019fd5;
+}
+.btn a {
 	background-color:#019fd5;
 	border-radius:1rem;
 	border:3px solid #fff;
 	max-width:100%;
-}
-.btn a {
 	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding:.5rem;
+}
+.btn a:hover {
+	background-color:#081f27;
 }
 
 .site-main a {
@@ -1036,14 +1046,19 @@ h1 {
   padding-right:0;
   position:relative;
 }
-.home .gd4l_featured {
-	top:-35px;
-}
+
 
 .gd4l_featured img {
 	display:block;
 	margin:0 auto;
 }
+a img.gd4l_featured_blog_img {
+	border:5px solid transparent;
+}
+a:hover img.gd4l_featured_blog_img {
+	border:5px solid #e92567;
+}
+
 .gd4l_featured h2, .gd4l_featured p {
   text-align:center;
   color:#fff;
@@ -1061,6 +1076,26 @@ h1 {
 	padding-right:.4em;
 	font-weight:900;
 }
+a.sexier polygon {
+	fill:#b50c49;
+}
+a:hover.sexier polygon{
+	fill:#e92567;
+}
+.gd4l_featured svg {
+	/*because it's 80% width, 20% margin, and 1/2 margin is 10*/
+	margin-left:10%;
+	position:relative;
+	top:-10px;
+	font-size:5px;
+	font-weight:900;
+}
+
+
+
+
+
+
  p.sexierbutton{
   background-image: url("https://gooddogs4life.com/wp-content/uploads/2020/03/featured-button-bg.png");
   background-position:center;
@@ -1076,6 +1111,7 @@ h1 {
 
 .cta {	
 	position:relevant;
+	padding-top:2rem;
 }
 .row.ctarow {
 	padding:1rem 0;
@@ -1090,6 +1126,10 @@ h1 {
 .green-puppy .row.ctarow p{
 	color:#fff;
 	font-size:small;
+}
+h2.positive-dog-training a,h2.positive-dog-training a:visited  {
+	color:#fff;
+	text-decoration:none;
 }
 
 .green-puppy {
@@ -1106,12 +1146,18 @@ h1 {
 	padding-top:1rem;
 }
 .green-puppy ul li {
-  color:#fff;
+
   font-weight:900;
   list-style-type: none;
   padding-bottom:3rem;
 }
-
+.green-puppy ul li a {
+	color:#fff;
+	padding:.5rem;
+}
+.green-puppy ul li a:hover {
+	text-decoration:none;
+}
 
 .online-dog-training {
 	background-image:url("https://gooddogs4life.com/wp-content/uploads/2020/04/online-dog-training-500.png");
@@ -1119,9 +1165,11 @@ h1 {
 	background-size:cover;
 	color:#fff;
 	font-size:1.4rem;
+	padding-top:2rem;
+	padding-bottom:2rem;
 }
-.online-dog-training p{
-	margin:3rem 1rem 0 35%;
+.online-dog-training p {
+	margin-top:10rem;
 }
 
 
@@ -1156,17 +1204,20 @@ h1 {
 .site-header.change .navbar-brand {
 	display:inline;
 }
-.site-branding{
-	padding-top:1rem;
+
+.site-branding {
+	max-width:300px;
+	margin:1rem auto;
+}
+.site-branding img {
+	max-width:50px;
+	float:left;
+	margin-right:.5rem;
 }
 .site-branding a {
 	font-size:x-large;
 	font-weight:900;
 	color:#2a3c3c;
-}
-a.custom-logo-link img {
-	position:absolute;
-	top:-.2rem;
 }
 .site-branding-text p{
 	line-height:1rem;
@@ -1174,7 +1225,7 @@ a.custom-logo-link img {
 	margin:0 0 .5rem 0;
 	font-size:large;
 }
-.site-description {
+.site-description a{
 	color:#019fd5;
 	font-size:small;
 }
@@ -1201,7 +1252,7 @@ button.menu-toggle{
 .navbar-dark .navbar-nav .nav-link {
 	color:#fff;
 	font-size:x-large;
-	padding:1.5rem 1rem;
+	padding:1rem;
 }
 .navbar-dark .navbar-nav .active>.nav-link{
 	color:#2a3c3c;
@@ -1211,25 +1262,25 @@ button.menu-toggle{
 	width:100%;
 }
 
-.col-lg-6.hero, .col-xl-8.hero {
+/*.col-lg-6.hero, .col-xl-8.hero {
 	padding-left:0;
 	padding-right:0;
-}
+}*/
 ul.navbar {
 	margin-right:0!important;
 }
 
-footer {
+footer.site-footer {
 	background-color:#019fd5;
 	color:#76cbe8;
 	padding:1rem;
 }
 
-footer a, footer a:visited {
+footer.site-footer a, footer.site-footer a:visited {
 	color:#76cbe8;
 	padding:1em 0;
 }
-footer a:hover {
+footer.site-footer a:hover {
 	color:#fff;
 }
 .footerlogo {
@@ -1242,68 +1293,15 @@ a:hover img.footerlogo {
 	opacity:1;
 }
 footer p {
-	line-height:50px;
 	margin-bottom:0;
 }
-
-
 .footerlogo {
-	float:left;
 	margin-right:.3rem;
 }
-/*
-.yt .cls-1{isolation:isolate;}
-.yt .cls-2{fill:url(#linear-gradient);}
-.yt .cls-3{fill:#9dacb4;}
-.yt .cls-4{fill:url(#linear-gradient-2);}
-.yt .cls-5{mix-blend-mode:multiply;}
-.yt .cls-6{fill:url(#linear-gradient-3);}
-.yt .cls-7{opacity:0.3;}
-.yt .cls-7,
-.yt .cls-9{mix-blend-mode:screen;}
-.yt .cls-8{fill:url(#linear-gradient-4);}
-.yt .cls-10{fill:url(#linear-gradient-5);}
-.yt .cls-11{fill:url(#linear-gradient-6);}
-.yt .cls-12{fill:url(#linear-gradient-7);}
-.yt .cls-13{fill:url(#linear-gradient-8);}
-.yt .cls-14{fill:url(#linear-gradient-9);}
-.yt .cls-15{fill:url(#linear-gradient-10);}
-.yt .cls-16{fill:url(#linear-gradient-11);}
-.yt .cls-17{fill:url(#linear-gradient-12);}
-.yt .cls-18{fill:url(#linear-gradient-13);}
-.yt .cls-19{fill:url(#linear-gradient-14);}
-.yt .cls-20{fill:#fff;}
-
-.fb svg {
-	float:left;
-	margin-right:1rem;
-}
-.fb a svg .cls-1{isolation:isolate;}
-.fb a svg .cls-2{fill:url(#fb-linear-gradient);}
-.fb a svg .cls-3{fill:#405686;}
-.fb a svg .cls-4,
-.fb a svg .cls-9{mix-blend-mode:multiply;}
-.fb a svg .cls-4{fill:url(#fb-linear-gradient-2);}
-.fb a svg .cls-5,
-.fb a svg .cls-7{fill:#3c548e;}
-.fb a svg .cls-14,
-.fb a svg .cls-16,
-.fb a svg .cls-5,
-.fb a svg .cls-6{mix-blend-mode:screen;}
-.fb a svg .cls-8{fill:url(#fb-linear-gradient-3);}
-.fb a svg .cls-10{fill:url(#fb-linear-gradient-4);}
-.fb a svg .cls-11{fill:url(#fb-linear-gradient-5);}
-.fb a svg .cls-12{fill:url(#fb-linear-gradient-6);}
-.fb a svg .cls-13{fill:url(#fb-linear-gradient-7);}
-.fb a svg .cls-14{opacity:0.4;}
-.fb a svg .cls-15{fill:url(#fb-linear-gradient-8);}
-.fb a svg .cls-16{opacity:0.7;}
-.fb a svg .cls-17{fill:url(#fb-linear-gradient-9);}
-*/
 
 /* start social */
   #social-test {
-	display: table-cell;
+	/*display: table-cell;  inside a bootstrap col instead*/
 	vertical-align: middle;
 	text-align: center;
 	font-size: 30px;
@@ -1375,10 +1373,13 @@ p.sendemail {
 	width:100%;
 }
 input.wpcf7-submit {
-	background-color:#019fd5;
-	color:#fff;
+	background-color:transparent;
 	padding:1rem;
 	font-size:1.2rem;
+	border-radius:5px;
+}
+.wpcf7 {
+	max-width:300px;
 }
 
 aside {
@@ -1391,6 +1392,146 @@ aside img {
 .tiny {
 	font-size:small;
 }
+.post .entry-title a {
+	text-decoration:none;
+	color:#019fd5 ;
+}
+
+.post .entry-title a:hover {
+	text-decoration:underline;
+}
+.post .entry-title.h4 {
+	margin-top:.5rem;
+}
+.post .entry-meta a {
+	text-decoration:none;
+}
+
+form.search-form {
+	height:50px;
+}
+.search-form label {
+	width:60%;
+	float:left;
+	height:100%;
+}
+.search-form input {
+	height:100%;
+	opacity:.8;
+	border-radius:6px;
+}
+input.search-submit {
+	width: 38%;
+	float:right;
+	height:100%;
+	border:2px solid white;
+	background-color:#76cbe8;
+	border-radius:6px;
+}
+
+footer [class*="col-"]  {
+	margin-bottom:1rem;
+}
+img.footerlogo {
+	margin:0 auto;
+	display:block;
+}
+footer p {
+	text-align:center;
+}
+
+.navbar-nav.mr-auto {
+	margin-left:0;
+}
+
+
+
+.container-fluid.homecontent {
+	font-size:1.25rem;
+	margin-bottom:4rem;
+	background:url("https://gooddogs4life.com/wp-content/uploads/2020/07/nico-training-your-dog.png") no-repeat right center;
+}
+
+
+.phone-training{
+	background: url("https://gooddogs4life.com/wp-content/uploads/2020/07/dog-training-on-phone.png") no-repeat;
+	background-size:contain;
+	position:relative;
+	min-height:200px;
+	text-align:center;
+}
+
+
+.container-fluid.you-tube {
+	background:url("https://gooddogs4life.com/wp-content/uploads/2020/07/you-tube-background.jpg");
+	padding-top:2rem;
+	padding-bottom:2rem;
+}
+
+ a.wp-block-button__link.odt{
+	border:3px solid #fff;
+	border-radius:5px;
+	background-color:transparent;
+}
+
+.you-tube-channel {
+	border:3px solid #404040;
+	border-radius:5px;
+	text-align:center;
+	background-color:#ffffff;
+	max-width:300px;
+	margin:3rem auto;
+	padding:1rem;
+}
+.you-tube-channel a {
+	color:#404040;
+
+}
+.you-tube-channel a:hover {
+	text-decoration: none;
+}
+.you-tube-channel p{
+	margin-bottom:0;
+}
+.doglife {
+	font-size:xxx-large;
+	font-weight:900;
+}
+.container-fluid.puppy-green-large {
+	background-color: #78a968;
+}
+.puppy-green-large {
+	color:#fff;
+	padding-top:2rem;
+	padding-bottom:2rem;
+}
+a.wp-block-button__link {
+	background-color:transparent;
+	border-radius:5;
+}
+ 
+.online-dog-training a.wp-block-button__link:hover {
+	color:#404040;
+	border-color:#404040;
+	background-color:#ffffff;
+	text-decoration:none;
+}
+.training-your-dog a.wp-block-button__link:hover {
+	background-color:#019fd5;
+	color:#ffffff;
+	border-color:#019fd5;
+}
+input.gd4l {
+	width:initial;
+}
+
+.container.faq-home{
+	max-width:800px;
+	margin:0 auto;
+	padding-top:4rem;
+	padding-bottom:4rem;
+}
+
 @media screen and (min-width:370px) {
 	.toggler-text {
 		display:none;
@@ -1430,18 +1571,13 @@ aside img {
 	.phone {
 		font-size:large;
 	}
-	.site-description{
+	.site-description a{
 		font-size:large;
 	}
 	.green-puppy ul li {
 		font-size:x-large;
 	}
-	.online-dog-training, .online-dog-training h2 {
-		font-weight:900;
-	}
-	.online-dog-training {
-		font-size:x-large;
-	}
+
 }
 
 @media screen and (min-width:450px) {
@@ -1460,19 +1596,25 @@ aside img {
 	.site-branding a {
 		font-size:xx-large
 	}
-	.site-branding p {
-		line-height:2.5rem;
+	.site-branding {
+		max-width: initial;
 	}
-	.site-branding-text p {
-		font-size:xx-large;
-	}
+
 }
 
-/*when the col-sm becomes 2 columns
+
 @media screen and (min-width:576px) {
-	
+	.online-dog-training p {
+		margin-top:initial;
 	}
-}*/
+
+}
+
+
+
+
+
+
 
 
 @media screen and (min-width:600px) {
@@ -1482,16 +1624,16 @@ aside img {
   .green-puppy ul {
     margin-left:40%;
   }
-  .online-dog-training {
-	  padding-bottom:5rem;
-  }
   .site-branding a {
 	  font-size:xxx-large;
   }
-  .site-description {
+  .site-description a {
 	  font-size:xx-large;
 	  font-weight:900;
   }
+  .site-branding img {
+	margin-top:1rem;
+	}
 }
 
 
@@ -1505,15 +1647,20 @@ aside img {
 	.puppycta {
 		font-size: 1.5rem;
 	}
+
+	.blog .post {
+		width:33%;
+		float:left;
+		padding:1rem;
+	}
 	.online-dog-training {
-		font-size:xx-large;
+		padding-top:5rem;
+		padding-bottom:13rem;
 	}
-	.home h1.entry-title {
-		font-size:xx-large;
-		font-weight:900;
+	.puppy-green-large {
+		background:url("https://gooddogs4life.com/wp-content/uploads/2020/07/puppy-green-large.jpg") no-repeat left;
+		min-height:719px;
 	}
-
-
 }
 
 
@@ -1521,19 +1668,50 @@ aside img {
 	.gd4l_featured h2 {
 		font-size:xx-large;
 	}
+
+	.headinglarge {
+		font-size: xxx-large;
+		font-weight:900;
+	}
+
+	.phone-training{
+		padding-left:0;
+		text-align:left;
+	}
+	.phone-training img {
+		max-height:300px;
+		position:relative;
+		left:-40px;
+	}
+
 	.online-dog-training {
-		padding-bottom:10rem;
+		min-height:800px;
 	}
+
+
 	.online-dog-training p {
-		margin:3rem 0 0 45%;
+		max-width:500px;
+		margin-top:3rem;
+		margin-bottom:5rem;
 	}
-	.online-dog-training h2 {
-		font-size:xxx-large;
+	
+	input.wpcf7-submit {
+		width:50%;
 	}
+	.site-branding {
+		max-width:550px;
+		margin-bottom:3rem;
+	}
+
 }
 
 
+
+
 @media screen and (min-width:1200px) {
+	.inside .col-xl-8 {
+		padding-right:100px;
+	}
 
 	.main-navigation ul {
 		float:right;
@@ -1542,18 +1720,11 @@ aside img {
 		padding-right:1rem;
 	}
 	.navbar-dark .navbar-nav .nav-link {
-		font-size:medium;
+		font-size:small;
 		padding:.5rem 1.3rem;
 	}
 	
-	.online-dog-training h2, .home h1.entry-title {
-		font-size: x-large;
-		margin:0.67em 0;
-	}
-	.online-dog-training p {
-		font-size:medium;
-		margin:6rem 1rem 0 45%;
-	}
+
 	.green-puppy {
 		background-image: url("https://gooddogs4life.com/wp-content/uploads/2020/04/puppy-green-grass.jpg");
 	}
@@ -1579,23 +1750,31 @@ aside img {
 		width:150px;
 	}
 
-	.home .entry-content {
-		font-size:.9rem;
+	/*.home .entry-content {
 		margin:.5em 0 0;
-	}
+	}*/
+
+	/* moved out of hero to 3 pack
 	.home .gd4l_featured {
 		left:-75px;
+	}*/
+	.entry-title {
+		font-size:xxx-large;
 	}
-	input.wpcf7-submit {
-		width:50%;
+
+
+	.cta {	
+		padding-top:1rem;
+	}
+
+	.phone-training img{
+		max-height:500px;
 	}
 
 }
 
 @media screen and (min-width:1500px) {
-	.green-puppy, .online-dog-training p {
-		font-size:x-large;
-	}
+
 	.green-puppy ul li {
 		font-size:x-large;
 		padding-bottom:1.5rem;
@@ -1603,12 +1782,12 @@ aside img {
 	.puppycta {
 		font-size:large;
 	}
-	.online-dog-training h2, .home h1.entry-title{
-		font-size:xx-large;
+
+
+	.phone-training img{
+		max-height: initial;
 	}
-	.home .entry-content {
-		font-size:1rem;
-	}
+	
 }
 
 @media screen and (min-width:1600px) {
@@ -1637,9 +1816,7 @@ aside img {
 }
 
 @media screen and (min-width:2000px) {
-	.green-puppy ul li, .online-dog-training p {
-		font-size:xx-large;
-	}
+
 	.wp-block-column div.btn{
 		font-size: x-large;
 	}
@@ -1656,19 +1833,90 @@ aside img {
 	.home .entry-content {
 		font-size:1.5rem;
 	}
-	.online-dog-training h2, .home h1.entry-title {
+	.home h1.entry-title {
 		font-size:xxx-large;
 	}
 	.home .gd4l_featured h2 {
 		font-size:xxx-large;
 	}
-	.navbar-dark .navbar-nav .nav-link {
-		font-size:x-large;;
-	}
+
 }
 
 @media screen and (min-width:2334px) {
 	.puppycta {
 		font-size:x-large;
 	}
+}
+/*hero couple heart banner*/
+.site-content.banner {
+	position:relative;
+}
+.site-content.banner img {
+	width:100%;
+	height:auto;
+}
+
+.container-fluid.bannertext {
+	position:absolute;
+	top:0;
+	left:0;
+}
+.bannertext {
+	color:#fff;
+	font-weight:900;
+	font-size: 10.5vw;
+}
+.bannertext .col-sm {
+	width:60%;
+	padding:3%;
+}
+p.slogan1 {
+	line-height:1;
+	margin-bottom:0;
+}
+p.slogan2 {
+	font-size: 5.5vw;
+	margin-top:.5rem;
+	font-weight:normal;
+	margin-bottom:0;
+	line-height:1.1;
+}
+p.slogan2 span {
+	font-weight:900;
+	font-size: 3.5vw;
+}
+.mobileonly {
+	display:block;
+	visibility:visible;
+}
+.deskonly {
+	display:none;
+	visibility:collapse;
+}
+@media screen and (min-width:441px) {
+	.bannertext .col-sm {
+		padding:1% 3%;
+	}
+	.mobileonly {
+		display:none;
+		visibility:collapse;
+	}
+	.deskonly {
+		display:block;
+		visibility:visible;
+	}
+}
+.container-fluid.testimonial {
+	background-color:#019fd5;
+	text-align:center;
+	color:#fff;
+	font-size:xx-large;
+	padding:2rem 0;
+}
+.container-fluid.testimonial p {
+	margin-bottom:0;
+}
+p.signature {
+	font-style:italic;
+	font-size:medium;
 }

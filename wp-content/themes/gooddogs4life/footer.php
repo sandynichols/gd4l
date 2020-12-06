@@ -16,25 +16,31 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info container">
 			<div class="row">
-			<div class="col-md-4 social">
-					<div id="social-test">
-					<ul class="social">
-						<li><a href="https://www.facebook.com/Good-Dogs-4-Life-108040164170067/?epa=SEARCH_BOX" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<!--<li><a href="https://instagram.com/colorlib"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>-->
-						<li><a href="https://www.youtube.com/channel/UCz1mUSRP-1i819W3BMRANZA" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></a></i></li>
-					</ul>
-					</div>
-					</div>
-
-
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<a href="<?php echo site_url();?>/"><img src="<?php echo site_url();?>/wp-content/uploads/2020/04/logo-white512.png" alt="Good Dogs 4 Life Logo for Postitive Dog Training" class="footerlogo" />
 					<p class="footerlogotext">Good Dogs 4 Life<p></a>
 				</div>
+				<div class="col-md-3">
+				<?php get_search_form();?>
+				</div>
+
+				<div class="col-md-2 social">
+					<div id="social-test">
+						<ul class="social">
+							<li><a href="https://www.facebook.com/Good-Dogs-4-Life-108040164170067/?epa=SEARCH_BOX" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<!--<li><a href="https://instagram.com/colorlib"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>-->
+							<li><a href="https://www.youtube.com/channel/UCe8NQFT0Qk26mWv3IYsC4XQ" target="_blank" title="Our YouTube Channel DOG LIFE"><i class="fa fa-youtube" aria-hidden="true"></a></i></li>
+						</ul>
+					</div>
+				</div>
+
+
+
 			
 				<div class="col-md-4">
 					<p><a href="https://www.sandynichols.net" target="_blank">Website by Sandy Nichols Web Design</a></p>
 				</div>
+				
 				
 			</div>
 

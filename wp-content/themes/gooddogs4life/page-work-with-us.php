@@ -40,13 +40,14 @@ get_header();
 		<div class="col-xl-4">
             <aside id="secondary" class="widget-area">
                 <figure>
-                    <a href="https://gooddogs4life.com/wp-content/uploads/2020/03/nico-scott-fb-profile-1536x1024.jpg" target="_blank"><img src="<?php echo site_url();?>/wp-content/uploads/2020/03/nico-scott-fb-profile-1536x1024.jpg" alt="Nico, Scott, and the Pack" /></a>
+                    <a href="<?php echo get_site_url(); ?>/wp-content/uploads/2020/03/nico-scott-fb-profile-1536x1024.jpg" target="_blank"><img src="<?php echo site_url();?>/wp-content/uploads/2020/03/nico-scott-fb-profile-1536x1024.jpg" alt="Nico, Scott, and the Pack" /></a>
                     <figcaption>Scott, Nico, and the Pack</figcaption>
                 </figure>  
                 
                 <figure>
                     <img src="<?php echo site_url();?>/wp-content/uploads/2020/03/PDT-Logo-Certified-2019-Purple-01-300x300.png" alt="We are Pro Dog Trainer Certified" />
                 </figure>
+				<h3 class="h1 text-center">Learn to focus on what your dog needs.</h3>
 
             </aside>
 		</div>

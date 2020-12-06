@@ -23,9 +23,9 @@ get_header();
 				//the_post_navigation();
 
 				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+				//if ( comments_open() || get_comments_number() ) :
+					//comments_template();
+				//endif;
 
 			endwhile; // End of the loop.
 			?>
@@ -34,7 +34,17 @@ get_header();
 		</div><!-- #primary -->
 
 <?php
-get_sidebar('sexysquirrel');
+
+if( is_single( 149 ) ) {
+    get_sidebar('sexysquirrel');
+} else {
+	?>
+	<div class="col-sm-4">
+		<?php get_sidebar();?>
+	</div>
+<?php
+}
+
 ?>
 </div>
 </div>

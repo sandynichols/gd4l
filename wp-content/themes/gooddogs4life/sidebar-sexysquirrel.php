@@ -9,7 +9,7 @@
 ?>
 
 <aside id="secondary" class="widget-area col-md-4">
-    <a href="https://gooddogs4life.com/wp-content/uploads/2020/03/what-you-get.jpg" target="_blank"><img src="https://gooddogs4life.com/wp-content/uploads/2020/03/what-you-get.jpg" alt="What you get" /></a>
+    <a href="<?php echo get_site_url(); ?>/wp-content/uploads/2020/03/what-you-get.jpg" target="_blank"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/03/what-you-get.jpg" alt="What you get" /></a>
     <br/><br/>
-    <a href="https://gooddogs4life.com/wp-content/uploads/2020/03/how-it-works.jpg" target="_blank"><img src="https://gooddogs4life.com/wp-content/uploads/2020/03/how-it-works.jpg" alt="how it works" /></a>
+    <a href="<?php echo get_site_url(); ?>/wp-content/uploads/2020/03/how-it-works.jpg" target="_blank"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2020/03/how-it-works.jpg" alt="how it works" /></a>
 </aside><!-- #secondary --> 
